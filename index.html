@@ -3,11 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind 4 CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <body class="mr-16 ml-16">
+    <nav class="shadow-2xl flex justify-between pt-2 mt-2 pb-2 rounded-2xl bg-indigo-600 text-white font-semibold pr-6 pl-6">
+      <h1 class="text-3xl font-semibold">Dit Portofolio!</h1>
+      <div class="pt-1">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+      </div>
+    </nav>
+    
+    <!-- Hero Section -->
+     <div class="mt-48 ml-2">
+      <h1 class="text-6xl font-semibold mb-2">Hi There!</h1>
+      <p class="text-2xl font-semibold mb-2">
+        Im, Raditya Rizki
+      </p>
+      <p>Im, Junior Web Developer and IT Implementor</p>
+     </div>
   </body>
+  <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@1.0.2/index.js"></script>
 </html>
