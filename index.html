@@ -4,10 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Link CSS -->
+   <link rel="stylesheet" href="style.css">
+
+  <!-- Link Font Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Custom Tailwindcss -->
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: '16px',
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          screens: {
+            '2xl': '1320px',
+          },
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <!-- Hero Section -->
+   <section id="home" class="pt-36">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4">
+          <h1 class="text-base font-semibold text-indigo-500">Hai Dunia, Saya <span class="text-slate-900 block font-semibold text-4xl mt-1">Raditya Rizki</span></h1>
+          <h2 class="font-medium text-slate-500 text-lg mb-5">Mahasiswa | It Implementor | Junior Web Programming</h2>
+          <p class="font-medium text-indigo-400 mb-10 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur impedit praesentium adipisci, quas placeat eius molestias.</p>
+
+          <a class="text-base font-semibold text-white bg-indigo-600 py-3 px-8 rounded-full hover:shadow-lg hover:bg-indigo-800 hover:opacity-80 transition duration-300 ease-in-out" href="#">Kontak Saya Disini!</a>
+        </div>
 </body>
 </html>
