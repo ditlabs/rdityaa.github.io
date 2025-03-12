@@ -69,11 +69,29 @@
           <a href="#home" class="block text-indigo-500 text-2xl py-6 font-bold">ditdoang</a>
         </div>
         <div class="flex items-center px-4">
-          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
             <span class="w-[30px] h-[3px] my-2 block rounded-xl transition duration-300 ease-in-out origin-top-left bg-slate-900"></span>
             <span class="w-[30px] h-[3px] my-2 block rounded-xl transition duration-300 ease-in-out bg-slate-900"></span>
             <span class="w-[30px] h-[3px] my-2 block rounded-xl transition duration-300 ease-in-out origin-bottom-left bg-slate-900"></span>
           </button>
+
+          <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home" class="text-base text-slate-900 py-2 mx-8 flex  group-hover:text-indigo-500">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="#home" class="text-base text-slate-900 py-2 mx-8 flex  group-hover:text-indigo-500">About</a>
+              </li>
+              <li class="group">
+                <a href="#home" class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-indigo-500">Projects</a>
+              </li>
+              <li class="group">
+                <a href="#home" class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-indigo-500">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
         </div>
       </div>
     </div>
