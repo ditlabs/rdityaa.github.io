@@ -32,8 +32,53 @@
       }
     }
   </script>
+
+  <!-- Custom Class Tailwind -->
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+
+      .navbar-fixed {
+        @apply fixed z-[9999] bg-white bg-opacity-70;
+        backdrop-filter: blur(5px)
+      }
+
+      .hamburger-active > span:nth-child(1) {
+      @apply rotate-45;
+      }
+
+      .hamburger-active > span:nth-child(2) {
+      @apply scale-0;
+      }
+
+      .hamburger-active > span:nth-child(3) {
+      @apply -rotate-45;
+      }
+
+    }
+  </style>
 </head>
 <body>
+  <!-- Navbar Secton -->
+  <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10 shadow-md">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a href="#home" class="block text-indigo-500 text-2xl py-6 font-bold">ditdoang</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+            <span class="w-[30px] h-[3px] my-2 block rounded-xl transition duration-300 ease-in-out origin-top-left bg-slate-900"></span>
+            <span class="w-[30px] h-[3px] my-2 block rounded-xl transition duration-300 ease-in-out bg-slate-900"></span>
+            <span class="w-[30px] h-[3px] my-2 block rounded-xl transition duration-300 ease-in-out origin-bottom-left bg-slate-900"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <!-- Hero Section -->
    <section id="home" class="pt-36">
     <div class="container">
@@ -47,7 +92,7 @@
     </div>
   
     <!-- About Section -->
-     <section id="about" class="pt-36 pb-32">
+     <section id="about" class="pt-36 pb-32 mb-96">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -78,5 +123,7 @@
       </div>
      </section>
      <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@latest/index.js"></script>
+
+     <script src="script.js"></script>
 </body>
 </html>
