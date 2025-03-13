@@ -19,3 +19,19 @@ window.onscroll = function () {
         header.classList.remove('navbar-fixed');
     }
 };
+
+// Form
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+ 
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+  
+    const subject = `Pesan dari ${name} - Portfolio Contact`;
+    const body = `Nama: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0APesan:%0D%0A${message}`;
+  
+    window.location.href = `mailto:radityarizki2309@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    
+    this.reset();
+  });

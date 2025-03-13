@@ -193,6 +193,18 @@
       </div>
      </section>
 
+     <!-- Keterampilan -->
+     <section id="project" class="pt-36 mt-16 pb-16 w-screen rounded-xl shadow-xl">
+      <div class="container">
+        <div class="w-full">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="text-4xl font-semibold mb-2">Keterampilan</h4>
+            <p class="text-indigo-600">Berikut adalah Keterampilan Tools dan Bahasa Pemrogamman saya</p>
+          </div>
+        </div>
+
+     </section>
+
      <!-- Contact -->
      <section id="contact" class="pt-36 mt-16 pb-16 w-screen">
       <div class="container">
@@ -201,25 +213,70 @@
             <h4 class="text-4xl font-semibold mb-2">Kontak Saya</h4>
             <p class="text-indigo-600">Jika kamu ingin berinteraksi dengan saya, Contact saya dengan form dibawah ini</p>
           </div>
-
-          <form action="#">
+          <form id="contactForm" class="w-full">
             <div class="w-full lg:w-2/3 lg:mx-auto">
+              <!-- Input Nama -->
               <div class="w-full px-4 mb-8">
-                <label for="name" class="text-base font-bold">Nama</label>
-                <input type="text" placeholder="Dit Doang" id="name" class="w-full bg-gray-100 border text-slate-900 rounded-md p-3 focus:outline-none focus:ring-indigo-500 focus:ring-1 focus:border-indigo-500">
+                <label for="name" class="block text-base font-semibold text-slate-700 mb-2">
+                  Nama
+                </label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name"
+                  placeholder="Contoh: John Doe" 
+                  class="w-full bg-gray-50 border border-gray-300 text-slate-900 rounded-lg p-3.5
+                         focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
+                         transition-all duration-200 placeholder:text-slate-400"
+                  required
+                >
               </div>
-            <div class="w-full px-4 mb-8">
-              <label for="email" class="text-base font-bold">Email</label>
-              <input type="email" placeholder="ditdoang@mail.com" id="email" class="w-full bg-gray-100 border text-slate-900 rounded-md p-3 focus:outline-none focus:ring-indigo-500 focus:ring-1 focus:border-indigo-500">
+          
+              <!-- Input Email -->
+              <div class="w-full px-4 mb-8">
+                <label for="email" class="block text-base font-semibold text-slate-700 mb-2">
+                  Email
+                </label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email"
+                  placeholder="contoh@email.com" 
+                  class="w-full bg-gray-50 border border-gray-300 text-slate-900 rounded-lg p-3.5
+                         focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
+                         transition-all duration-200 placeholder:text-slate-400"
+                  required
+                >
+              </div>
+          
+              <!-- Input Pesan -->
+              <div class="w-full px-4 mb-8">
+                <label for="message" class="block text-base font-semibold text-slate-700 mb-2">
+                  Pesan dan Kesan
+                </label>
+                <textarea 
+                  id="message" 
+                  name="message"
+                  placeholder="Tulis pesan Anda disini..." 
+                  class="w-full h-40 bg-gray-50 border border-gray-300 text-slate-900 rounded-lg p-3.5
+                         focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
+                         transition-all duration-200 placeholder:text-slate-400 resize-none"
+                  required
+                ></textarea>
+              </div>
+          
+              <!-- Tombol Submit -->
+              <div class="w-full px-4">
+                <button 
+                  type="submit" 
+                  class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 px-8 
+                         rounded-full transition-all duration-300 transform hover:scale-[1.02] 
+                         active:scale-95 shadow-md hover:shadow-lg"
+                >
+                  Kirim Pesan
+                </button>
+              </div>
             </div>
-            <div class="w-full px-4 mb-8">
-              <label for="message" class="text-base font-bold">Pesan dan Kesan</label>
-              <textarea placeholder="Ketik pesan dan saranmu disini" class="w-full h-40 bg-gray-100 border text-slate-900 rounded-md p-3 focus:outline-none focus:ring-indigo-500 focus:ring-1 focus:border-indigo-500"></textarea> 
-            </div>
-            <div class="w-full px-4">
-              <button class="text-base font-semibold text-white bg-indigo-600 py-4 px-10 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Submit</button>
-            </div>
-          </div>
           </form>
         </div>
      </section>
